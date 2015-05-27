@@ -35,7 +35,7 @@
 	<h3>답변</h3>
 	<div class="answerWrite">
 	<form method="post">
-		<input type="hidden" name="questionId" value="${question.questionId}">
+		<input id="questionId" type="hidden" name="questionId" value="${question.questionId}">
 	    <p>
 	        <label for="author">이름: </label>
 	        <input type="text" name="writer" id="writer" />
@@ -59,15 +59,12 @@
 	        <div class="comment">
 	            <div class="comment-metadata">
 	                <span class="comment-author">${each.writer}</span>
-	                <span class="comment-date">
-	                    ${each.createdDate}
-	                </span>
+	                <span class="comment-date">${each.createdDate}</span>
 	            </div>
 	            <div class="comment-content">
-	                <div class="about">내용: </div>
-	                ${each.contents}
+	            	<div class="about">내용: </div>${each.contents}
 	            </div>
-	            <div>
+	            <div class="deleteComment">
 	            	<a href="#">삭제</a>
 	            </div>
 	        </div>
