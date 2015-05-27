@@ -5,7 +5,7 @@
 * 위 두가지 작업이 모두 끝나면 "Completed Load ServletContext!", "Initialized Request Mapping!" 이라는 로그를 확인할 수 있습니다.
 
 #### 2. Tomcat 서버를 시작한 후 http://localhost:8080으로 접근시 호출 순서 및 흐름을 설명하라.
-* 
+* 브라우져에서 http://localhost:8080을 입력하면 로컬 포트 8080으로 연결을 요청합니다. 톰캣은 welcome-file이 설정되어 있지 않으므로 디폴트인 index.jsp로 연결합니다. index.jsp 파일을 보면 /list.next로 리다이렉트 하는 것을 확인할 수 있습니다. 사용자가 리다이렉트에 의해 다시 /list.next로 연결할 경우 DispatcherServlet으로 요청이 전해지고 DispatcherServlet에 있는 service 함수에서 RequestMapping에 의해 ListController가 선택되어 ModelAndView를 작성합니다. 이렇게 하면 우리가 보는 첫 화면을 출력하게 됩니다.
 
 #### 7. ListController와 ShowController가 멀티 쓰레드 상황에서 문제가 발생하는 이유에 대해 설명하라.
 * 
