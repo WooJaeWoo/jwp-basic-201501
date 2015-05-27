@@ -4,7 +4,6 @@
 * DispatcherServlet에서는 어노테이션 옵션인 'loadOnStartup = 1'에 의해 서버가 실행될 때 DispatcherServlet에서 코드를 한 번 실행합니다. 여기서 하는 주요 작업은 RequestMapping을 초기화 하는 일입니다.
 * 위 두가지 작업이 모두 끝나면 "Completed Load ServletContext!", "Initialized Request Mapping!" 이라는 로그를 확인할 수 있습니다.
 
-
 #### 2. Tomcat 서버를 시작한 후 http://localhost:8080으로 접근시 호출 순서 및 흐름을 설명하라.
 * 
 
