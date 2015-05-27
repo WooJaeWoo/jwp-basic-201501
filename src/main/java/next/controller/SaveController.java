@@ -22,8 +22,9 @@ public class SaveController extends AbstractController {
 		Question question = new Question(writer, title, contents);
 		questionDao.insert(question);
 		
-		ModelAndView mav = jstlView("redirect:/list.next");
-		mav.addObject("questions", question);
-		return mav;
+		return null;
+//		ModelAndView mav = jstlView("redirect:/list.next");
+//		mav.addObject("questions", question);
+//		return mav;
 	}	
 }

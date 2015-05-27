@@ -35,18 +35,18 @@
 	<h3>답변</h3>
 	<div class="answerWrite">
 	<form method="post">
-	<input type="hidden" name="questionId" value="${question.questionId}">
-    <p>
-        <label for="author">이름: </label>
-        <input type="text" name="writer" id="writer" />
-    </p>
-    <p>
-        <label for="content">내용 : </label>
-        <textarea name="content" id="content"></textarea>
-    </p>
-    <p>
-        <input type="submit" value="저장" />
-    </p>
+		<input type="hidden" name="questionId" value="${question.questionId}">
+	    <p>
+	        <label for="author">이름: </label>
+	        <input type="text" name="writer" id="writer" />
+	    </p>
+	    <p>
+	        <label for="content">내용 : </label>
+	        <textarea name="content" id="content"></textarea>
+	    </p>
+	    <p>
+	        <input type="submit" value="저장" />
+	    </p>
     </form>
     </div>
     
