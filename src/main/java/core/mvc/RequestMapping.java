@@ -5,8 +5,10 @@ import java.util.Map;
 
 import next.controller.AddAnswerController;
 import next.controller.DelAnswerController;
+import next.controller.DelQuestionController;
 import next.controller.EditQuestionController;
 import next.controller.ListController;
+import next.controller.MDelQuestionController;
 import next.controller.MListController;
 import next.controller.SaveController;
 import next.controller.ShowController;
@@ -23,10 +25,12 @@ public class RequestMapping {
 		mappings.put("/list.next", new ListController());
 		mappings.put("/show.next", new ShowController());
 		mappings.put("/updateForm.next", new EditQuestionController());
+		mappings.put("/delete.next", new DelQuestionController());
 		mappings.put("/editSave.next", new UpdateController());
 		mappings.put("/api/list.next", new MListController());
 		mappings.put("/api/addanswer.next", new AddAnswerController());
 		mappings.put("/api/delanswer.next", new DelAnswerController());
+		mappings.put("/api/delete.next", new MDelQuestionController());
 		mappings.put("/save.next", new SaveController());
 		mappings.put("/form.next", new ForwardController("form.jsp"));
 		
