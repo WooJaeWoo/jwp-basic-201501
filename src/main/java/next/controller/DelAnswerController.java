@@ -9,11 +9,11 @@ import core.mvc.ModelAndView;
 import core.utils.ServletRequestUtils;
 
 public class DelAnswerController extends AbstractController {
-	AnswerDao answerDao = new AnswerDao();
 	
 	@Override
 	public ModelAndView execute(HttpServletRequest request,
 			HttpServletResponse response) throws Exception {
+		AnswerDao answerDao = new AnswerDao();
 		long questionId = ServletRequestUtils.getLongParameter(request, "questionId");
 		String writer = ServletRequestUtils.getStringParameter(request, "writer");
 		
