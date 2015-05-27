@@ -29,7 +29,6 @@ public class ShowController extends AbstractController {
 		Question question;
 		List<Answer> answers;
 		long questionId = ServletRequestUtils.getRequiredLongParameter(request, "questionId");
-		logger.debug("questionId : {}", questionId);
 		question = questionDao.findById(questionId);
 		answers = answerDao.findAllByQuestionId(questionId);
 		ModelAndView mav = jstlView("show.jsp");
