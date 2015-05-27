@@ -26,6 +26,4 @@ public class AddAnswerController extends AbstractController {
 		ModelAndView mav = jstlView("redirect:/");
 		return mav;
 	}
-
-	
 }
